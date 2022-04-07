@@ -1,0 +1,157 @@
+@media (min-width: $defaultMoblieSize) {
+
+    .navigation-menu {
+        display: none;
+    }
+
+    .header {
+        // Every class that contains bg- inside
+        [class*="bg-"] {
+            width: 100%;
+            height: 45vh;
+        }
+
+        .bg-1 {
+            @include bg-pic("/img/xml-bg.jpg",cover);
+        }
+
+        .bg-2 {
+            @include bg-pic("/img/scss.jpg",cover);
+        }
+
+        .bg-3 {
+            @include bg-pic("/img/pexels-luis-gomes-546819.jpg",cover);
+        }
+    }
+
+    .about > p {
+        padding: 3%;
+    }
+
+    .work-experience {
+        flex-direction: column;
+        row-gap: 5vh;
+
+        > h3 {
+            font-weight: 600;
+            color: $headerLvl3;
+        }
+
+        > article {
+            border: 2px solid $workExperienceBorder;
+            border-radius: 2px;
+            padding: 2%;
+        }
+    }
+
+    .projects {
+        p {
+            line-height: 2;
+        }
+
+        div > aside {
+            margin-right: 3%;
+            margin-bottom: 0.5%;
+
+            float: left;
+            @include aside-box();
+            color: $projectAsideFont;
+            font-weight: 600;
+            background-color: $projectAsideBg;
+
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .skills {
+        @include flex-behavior(flex,column,5vh,0px);
+
+        > div > aside {
+            @include aside-box();
+            padding: 15%;
+        }
+
+        #html-5 > aside {
+            @include bg-pic("/img/html-5.png",cover);
+        }
+
+        #css > aside {
+            @include bg-pic("/img/css.png",cover);
+        }
+
+        #javascript > aside {
+            @include bg-pic("/img/javascript.png",cover);
+        }
+
+        #sass > aside {
+            @include bg-pic("/img/sass.png",cover);
+        }
+
+        #github {
+            > aside {
+                @include bg-pic("/img/github.png",cover);
+            }
+            > p {
+                padding-left: 4%;
+            }
+        }
+    }
+
+    .education {
+        @include flex-behavior(flex,column,5vh,0px);
+
+        aside {
+            @include aside-box(45vh,25vh);
+        }
+
+        #tamwood-card > aside {
+            @include bg-pic("/img/Tamwood.png");
+        }
+
+        #chula-card > aside {
+            @include bg-pic("/img/Chula.png");
+        }
+
+        #seoul-card > aside {
+            @include bg-pic("/img/seoul.png");
+        }
+
+        #unam-card > aside {
+            @include bg-pic("/img/UNAM.png");
+        }
+    }
+
+    .contact {
+        [type="text"], [type="email"], textarea {
+            width: 90%;
+            padding: 3%;
+        }
+
+        & > form > [class="d-flex"] {
+            justify-content: space-evenly;
+        }
+    }
+
+    .btn {
+        color: white;
+        background-color: $btnBg;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $btnBgHover;
+        }
+    }
+
+    .footer {
+        background-color: $footerBg;
+        color: white;
+        padding: 5%;
+        text-align: center;
+
+        & > span {
+            font-weight: bold;
+        }
+    }
+}

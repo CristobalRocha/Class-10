@@ -1,0 +1,54 @@
+@media (min-width: $defaultTabletSize) {
+
+    .about {
+        line-height: 1.5;
+        font-size: 24px;
+        padding-bottom: 0%;
+    }
+
+    .skills {
+        font-size: 24px;
+        #html-5 > aside, #css > aside, #javascript > aside, #sass > aside, #github > aside {
+            padding: 10%;
+        }
+
+        
+    }
+
+    .education {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .card {
+            width: 40%;
+        }
+
+        aside {
+            padding: 0%;
+            width: 100%;
+        }
+    }
+
+    .contact {
+        width: 100%;
+        @include flex-behavior(flex,column,0,0);
+        align-items: center;
+
+        form {
+            width: 90%;
+        }
+
+        label {
+            width: 30%;
+        }
+
+        [type="text"], [type="email"] {
+            width: 65%;
+            padding: 1%;
+        }
+
+        div {
+            padding: 1%;
+        }
+    }
+}

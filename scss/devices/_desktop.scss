@@ -1,0 +1,105 @@
+@media (min-width: 1000px) {
+
+    .navigation-menu {
+        display: block;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            background-color: lightgray;
+        }
+        li {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            &:hover {
+                background-color: steelblue;
+                
+            }
+        }
+        a {
+            width: 100%;
+            padding: 10%;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .header {
+        [class*="bg-"] {
+            height: 65vh;
+        }
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > p {
+            margin: 0;
+        }
+    }
+
+    .work-experience {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+
+        article {
+            width: 30%;
+        }
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #projectWrapper {
+            width: 70%;
+        }
+    }
+
+    .skills {
+        align-items: center;
+
+        #html-5 > p, #javascript > p, #github > p {
+            padding-left: 2%;
+        }
+
+        #html-5 > aside, #css > aside, #javascript > aside, #sass > aside, #github > aside {
+            padding: 5%;
+            width: 20vh;
+            background-size: contain;
+        }
+
+        > div {
+            width: 70%;
+        }
+    }
+
+    .education {
+        .card {
+            width: 23%;
+            align-items: center;
+            text-align: center;
+        }
+
+        aside {
+            width: 80%;
+        }
+    }
+
+    .footer {
+        padding: 2%;
+    }
+}

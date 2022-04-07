@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <title>Class - 10</title>
+
+</head>
+<body>
+
+    <nav class="navigation-menu" id="navigation-menu">
+        <ul class="d-flex">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="header" id="header">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-1">
+                </div>
+                <div class="carousel-item bg-2">
+                </div>
+                <div class="carousel-item bg-3">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+            <h2>
+                about me
+            </h2>
+            <p>
+                I usually feel motivated to push myself to not just provide results,
+                but also help my workmates to achieve higher goals.
+            </p>
+            <p>
+                When I face a challenge, I usually do some research
+                on how to solve the situation with the better approach.
+                If I am not sure or cannot solve it, I request assistance from my leader. 
+            </p>
+            <p>
+                Last time I had problem with code, I realized that making comments about every section, can avoid further mistakes that might face.
+            </p>
+            <p>
+                There is a project where I could learn way more about JavaScript, arrays, random number, and other calculation. With that, the user was able set several numbers and the software delivered data and metadata about the array of numbers and the numbers themselves.
+            </p>           
+
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section class="work-experience d-flex" id="work-experience">
+            <h2>
+                WORK EXPERIENCE
+            </h2>
+            
+            <!-- FIRST JOB -->
+            <article class="first-job">
+                <h3>
+                    Google - Web Developer
+                </h3>
+                <h6>
+                    Jan 2021 to Dec 2021
+                </h6>
+                <p>
+                    <ol>
+                        <li>
+                            Worked with the team leader to build responsive projects,
+                            using Preprocessors, Bootstrap, and Google Fonts
+                        </li>
+                        <li>
+                            Planned ahead every project, using JIRA software and Google
+                            SaaS.
+                        </li>
+                        <li>
+                            Worked with multiple clients to build cloud services and projects
+                        </li>
+                        <li>
+                            Had fun!
+                        </li>
+                    </ol>
+                </p>
+            </article>
+
+            <!-- SECOND JOB -->
+            <article class="second-job">
+                <h3>
+                    Microsoft - Remote ASP.NET Developers
+                </h3>
+                <h6>
+                    Jan 2020 to Dec 2020
+                </h6>
+                <p>
+                    <ol>
+                        <li>
+                            Deployed projects following the Microsoft Project Manager software,
+                            following the due dates.
+                        </li>
+                        <li>
+                            Planned and scheduled meetings with prospective clients.
+                        </li>
+                        <li>
+                            Built different projects allowed me to work with different Version Control Software
+                        </li>
+                        <li>
+                            Managed microservices and deployed to Azure account.
+                        </li>
+                    </ol>
+                </p>
+            </article>
+
+            <!-- THIRD JOB -->
+            <article class="third-job">
+                <h3>
+                    Apple - App Developers
+                </h3>
+                <h6>
+                    Mar 2017 to Jan 2020
+                </h6>
+                <p>
+                    <ol>
+                        <li>
+                            Established due dates to every project cycle. Followind the set scheduled.
+                        </li>
+                        <li>
+                           Followed the UML set by Leader Engineer and apply those standards.
+                        </li>
+                        <li>
+                            Used Swift to code and deploy part of the project to the branch.
+                        </li>
+                        <li>
+                            Apllied standard testing rules to the deployed apps.
+                        </li>
+                    </ol>
+                </p>
+            </article>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects" id="projects">
+            <h2>
+                projects
+            </h2>
+
+            <!-- ACCORDION WRAPPER -->
+            <div class="accordion" id="projectWrapper">
+
+                <!-- FIRST PROJECT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectone" aria-expanded="false" aria-controls="collapseOne">
+                            Personal Portfolio - HTML and CSS
+                        </button>
+                    </h2>
+                    <div id="projectone" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                            <aside>
+                                #1 screenshot
+                            </aside>
+                            <p>
+                                <strong>This is was my first HTML and CSS project.</strong>
+                                I had to work 5 days to build 4 pages of my portfolio, talking about my skills, education, background experience, and projects. Despite that this was my first project, I have improved way more.
+                            </p>
+                            <a href="https://www.github.com" target="_blank" class="btn">
+                                Portfolio Repository
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- END OF FIRST PROJECT -->
+
+                <!-- SECOND PROJECT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projecttwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Responsive website
+                        </button>
+                    </h2>
+                    <div id="projecttwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                            <aside>
+                                #2 screenshot
+                            </aside>
+                            <p>
+                                <strong>This is was my second HTML and CSS project.</strong>
+                                I built a company service website. Including responsive versions of the company website.
+                            </p>
+                            <a href="https://www.github.com" target="_blank" class="btn">
+                                Portfolio Repository
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- END OF SECOND PROJECT -->
+
+                <!-- THIRD PROJECT -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#projectthree" aria-expanded="false" aria-controls="collapseThree">
+                            Final Exam
+                        </button>
+                    </h2>
+                    <div id="projectthree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                            <aside>
+                                #3 screenshot
+                            </aside>
+                            <p>
+                                <strong>This was my advanced CSS final exam.</strong>
+                                I was able to create a single page, using SCSS Preprocessor.
+                                Nesting CSS, classes, ids, tags, and so on. It was pretty easy.
+                                A piece of cake.
+                            </p>
+                            <a href="https://www.github.com" target="_blank" class="btn">
+                                Portfolio Repository
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- END OF THIRD PROJECT -->
+
+            </div> <!-- END OF ACCORDION WRAPPER -->
+
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills d-flex" id="skills">
+            <h2>
+                SKILLS
+            </h2>
+            
+            <!-- HTML-5 -->
+            <div id="html-5" class="d-flex">
+                <aside></aside>
+                <p>
+                    Build HTML-5 websites defining basic structure and using semantic HTML properly. Building a properly menu, tables, and forms.
+                </p>
+            </div>
+
+            <!-- CSS -->
+            <div id="css" class="d-flex">
+                
+                <p>
+                    Using CSS to apply styling to the website by using
+                    tag, classes, and id selector. Plus, building a responsive
+                    website, using @media query selector.
+                    <!-- 
+                        Using to change the size, colors, and formats of the elements.
+                        It is also possible to inser background (picture of colors).
+                    -->
+                </p>
+                <aside></aside>
+            </div>
+
+            <!-- JavaScript -->
+            <div id="javascript" class="d-flex">
+                <aside></aside>
+                <p>
+                    As JavaScript is a client-side language, I am able to make
+                    my websites dynamic, using functions and mainpulating DOM.
+                    Plus, it is a foundation to learn React, Vue, and Angular.
+                </p>
+            </div>
+
+            <!-- SASS -->
+            <div id="sass" class="d-flex">
+                <p>
+                    Preprocessor SASS can render CSS faster and more organized.
+                    By using variables and nested styling.
+                    It also export the minified version of the CSS.
+                </p>
+                <aside></aside>
+            </div>
+
+            <!-- github -->
+            <div id="github" class="d-flex">
+                <aside></aside>
+                <p>
+                    As a Version Control System, allows me to work with teams.
+                    Plus, it helps me to track version of softwares, by creating branches.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section class="education" id="education">
+            <h2>
+                EDUCATION
+            </h2>
+
+            <!-- TAMWOOD CARD -->
+            <div class="card" id="tamwood-card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                    <h5 class="card-title">Tamwood College</h5>
+                    <p class="card-text">
+                        Ability to design and code interactive client-facing websites using HTML, CSS, and JavaScript
+                    </p>
+                    <a href="https://tamwood.com/careers/web-developer/" target="_blank" class="btn">
+                        Web Development
+                    </a>
+                </div>
+            </div>
+
+            <!-- CHULA CARD -->
+            <div class="card" id="chula-card">
+                <aside></aside>
+                <div class="card-body">
+                    <h5 class="card-title">Chula College</h5>
+                    <p class="card-text">
+                        Ability to design and code interactive client-facing websites using HTML, CSS, and JavaScript
+                    </p>
+                    <a href="https://www.chula.ac.th/en/academics/academic-units/it/" target="_blank" class="btn">
+                        Information and Tech
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEOUL CARD -->
+            <div class="card" id="seoul-card">
+                <aside></aside>
+                <div class="card-body">
+                    <h5 class="card-title">Seoul University</h5>
+                    <p class="card-text">
+                        Ability to design and code interactive client-facing websites using HTML, CSS, and JavaScript
+                    </p>
+                    <a href="https://cse.snu.ac.kr/en" target="_blank" class="btn">
+                        Computer Science and Eng.
+                    </a>
+                </div>
+            </div>
+
+            <!-- UNAM CARD -->
+            <div class="card" id="unam-card">
+                <aside></aside>
+                <div class="card-body">
+                    <h5 class="card-title">Unam University</h5>
+                    <p class="card-text">
+                        Ability to design and code interactive client-facing websites using HTML, CSS, and JavaScript
+                    </p>
+                    <a href="https://www.posgrado.unam.mx/oferta/cfmi/dipt_comput.pdf" target="_blank" class="btn">
+                        Post-Bsc. Comp. Science and  Eng.
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <h2>
+                CONTACT
+            </h2>
+            <form>
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Message" required></textarea>
+                </div>
+                <div class="d-flex">
+                    <input type="submit" value="Send Message" class="btn">
+                    <input type="reset" value="Clear" class="btn">
+                </div>
+            </form>
+        </section>
+
+        <!-- This is a comment -->
+    </main>
+    <footer id="footer" class="footer">
+      &copy; <span>Your Site Name.</span> All Rights reserved.
+      Designed by <span> Cristobal Rocha</span>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+</body>
+</html>
